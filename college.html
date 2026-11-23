@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВТК — Главная</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="college-page">
+
+    <header class="college-header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">МК</div>
+                <div class="logo-text">
+                    <span class="college-name">ВТК</span>
+                    <span class="college-tagline">Колледж</span>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home" class="active">Главная</a></li>
+                    <li><a href="#specialties">Специальности</a></li>
+                    <li><a href="#news">Новости</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+        </div>
+    </header>
+
+    
+    <section class="banner" id="home">
+        <div class="banner-content">
+            <h1>Добро пожаловать в «ВТК»</h1>
+            <p>Современное образование, востребованные специальности и яркая студенческая жизнь</p>
+            <a href="#specialties" class="banner-btn">Узнать больше</a>
+        </div>
+    </section>
+
+    
+    <section class="specialties" id="specialties">
+        <div class="container">
+            <h2 class="section-title">Наши специальности</h2>
+            <div class="specialties-grid">
+                <article class="specialty-card">
+                    <div class="specialty-icon">💻</div>
+                    <h3>Информационные системы</h3>
+                    <p>Разработка программного обеспечения, веб-технологии, базы данных и кибербезопасность.</p>
+                    <a href="#" class="specialty-link">Подробнее →</a>
+                </article>
+                <article class="specialty-card">
+                    <div class="specialty-icon">🎨</div>
+                    <h3>Дизайн и медиа</h3>
+                    <p>Графический дизайн, UI/UX, мультимедиа и создание цифрового контента.</p>
+                    <a href="#" class="specialty-link">Подробнее →</a>
+                </article>
+                <article class="specialty-card">
+                    <div class="specialty-icon">📊</div>
+                    <h3>Экономика и менеджмент</h3>
+                    <p>Бизнес-аналитика, управление проектами, маркетинг и предпринимательство.</p>
+                    <a href="#" class="specialty-link">Подробнее →</a>
+                </article>
+                <article class="specialty-card">
+                    <div class="specialty-icon">🔧</div>
+                    <h3>Технические системы</h3>
+                    <p>Автоматизация, электроника, робототехника и инженерные технологии.</p>
+                    <a href="#" class="specialty-link">Подробнее →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="news" id="news">
+        <div class="container">
+            <h2 class="section-title">Новости</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-date">15 ноября 2026</div>
+                    <h3>День открытых дверей</h3>
+                    <p>Приглашаем будущих абитуриентов и их родителей познакомиться с колледжем, преподавателями и лабораториями.</p>
+                    <a href="#" class="news-link">Читать далее</a>
+                </article>
+                <article class="news-card">
+                    <div class="news-date">8 ноября 2026</div>
+                    <h3>Победа на хакатоне</h3>
+                    <p>Студенты направления «Информационные системы» заняли 1 место на региональном IT-хакатоне.</p>
+                    <a href="#" class="news-link">Читать далее</a>
+                </article>
+                <article class="news-card">
+                    <div class="news-date">1 ноября 2026</div>
+                    <h3>Новая лаборатория</h3>
+                    <p>Открыта современная лаборатория робототехники и искусственного интеллекта.</p>
+                    <a href="#" class="news-link">Читать далее</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="college-footer" id="contacts">
+        <div class="container footer-content">
+            <div class="footer-about">
+                <h3>ВТК</h3>
+                <p>Колледж ВТК</p>
+            </div>
+            <div class="footer-contacts">
+                <h4>Контакты</h4>
+                <p>📍 г. Москва, ул. Образовательная, 15</p>
+                <p>📞 +7 (495) 123-45-67</p>
+                <p>✉️ info@mycollege.ru</p>
+            </div>
+            <div class="footer-links">
+                <h4>Полезные ссылки</h4>
+                <ul>
+                    <li><a href="#">Абитуриенту</a></li>
+                    <li><a href="#">Студенту</a></li>
+                    <li><a href="#">Расписание</a></li>
+                    <li><a href="#">Документы</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ВТК. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                mainNav.classList.toggle('open');
+            });
+        }
+    </script>
+</body>
+</html>

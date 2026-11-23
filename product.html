@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточка товара</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="product-page">
+    <div class="product-card">
+        <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop" alt="Кроссовки Nike Air Max">
+            <span class="badge">Новинка</span>
+        </div>
+        <div class="product-info">
+            <h2 class="product-title">Nike Air Max 270</h2>
+            <p class="product-description">
+                Легендарные кроссовки с максимальной амортизацией.
+                Идеально подходят для повседневной носки и лёгких пробежек.
+                Дышащий верх и удобная подошва.
+            </p>
+            <div class="product-meta">
+                <span class="price">8 990 ₽</span>
+                <span class="old-price">11 490 ₽</span>
+            </div>
+            <button class="buy-btn" onclick="buyProduct()">Купить</button>
+        </div>
+    </div>
+
+    <script>
+        function buyProduct() {
+            alert('Товар «Nike Air Max 270» добавлен в корзину!\nЦена: 8 990 ₽');
+        }
+    </script>
+</body>
+</html>
